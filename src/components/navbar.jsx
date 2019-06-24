@@ -1,7 +1,16 @@
 import React from 'react';
 import $ from 'jquery';
 
+import logo1 from '../img/logo-white.png';
+import logo2 from '../img/logo-blue.png';
+
 class Navbar extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            logo: logo1
+        }
+    }
 
     componentDidMount(){
         const nav = $('nav');
@@ -26,9 +35,11 @@ class Navbar extends React.Component{
             if(window.pageYOffset > 50){
                 document.querySelector('.navbar-expand-md').classList.add('navbar-reduce');
                 document.querySelector('.navbar-expand-md').classList.remove('navbar-trans');
+                this.setState({logo: logo2});
             }else {
                 document.querySelector('.navbar-expand-md').classList.add('navbar-trans');
                 document.querySelector('.navbar-expand-md').classList.remove('navbar-reduce');
+                this.setState({logo: logo1});
             }
         });
 
@@ -54,7 +65,7 @@ class Navbar extends React.Component{
         return (
             <nav className="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
                 <div className="container">
-                    <a className="navbar-brand js-scroll" href="#page-top">FdaviZ</a>
+                    <a className="navbar-brand js-scroll" href="#page-top"><img src={this.state.logo} alt="logo" style={{maxWidth: "100px"}}/></a>
                     <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                     aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                         <span></span>

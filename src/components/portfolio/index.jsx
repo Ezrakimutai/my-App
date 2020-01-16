@@ -1,40 +1,40 @@
 import React from 'react';
 
 //import vmarine
-import vmarine from "../img/Vmarine.jpg";
-import vmarine1 from "../img/vmarine-1.png";
-import vmarine2 from "../img/vmarine-2.png";
-import vmarine3 from "../img/vmarine-3.png";
-import vmarine4 from "../img/vmarine-4.png";
-import vmarine5 from "../img/vmarine-5.png";
-import vmarine6 from "../img/vmarine-6.png";
-import vmarine7 from "../img/vmarine-7.png";
+import vmarine from "../../img/Vmarine.jpg";
+import vmarine1 from "../../img/vmarine-1.png";
+import vmarine2 from "../../img/vmarine-2.png";
+import vmarine3 from "../../img/vmarine-3.png";
+import vmarine4 from "../../img/vmarine-4.png";
+import vmarine5 from "../../img/vmarine-5.png";
+import vmarine6 from "../../img/vmarine-6.png";
+import vmarine7 from "../../img/vmarine-7.png";
 
 //aguadeluz pics
-import aguaDeLuz from "../img/aguaDeLuz.png";
-import aguaDeLuz1 from "../img/aguaDeLuz-1.png";
-import aguaDeLuz2 from "../img/aguaDeLuz-2.png";
-import aguaDeLuz3 from "../img/aguaDeLuz-3.png";
-import aguaDeLuz4 from "../img/aguaDeLuz-4.png";
+import aguaDeLuz from "../../img/aguaDeLuz.png";
+import aguaDeLuz1 from "../../img/aguaDeLuz-1.png";
+import aguaDeLuz2 from "../../img/aguaDeLuz-2.png";
+import aguaDeLuz3 from "../../img/aguaDeLuz-3.png";
+import aguaDeLuz4 from "../../img/aguaDeLuz-4.png";
 
 //import todo
-import todoList from "../img/todolist.png";
-import todoList1 from "../img/todo-1.png";
-import todoList2 from "../img/todo-2.png";
-import todoList3 from "../img/todo-3.png";
+import todoList from "../../img/todolist.png";
+import todoList1 from "../../img/todo-1.png";
+import todoList2 from "../../img/todo-2.png";
+import todoList3 from "../../img/todo-3.png";
 
 //import amtbw
-import amtbw from "../img/amtbw.png";
+import amtbw from "../../img/amtbw.png";
 
 //import medlingos
-import medlingos from "../img/medlingos.jpg";
-import medlingos1 from "../img/medlingos-1.jpg";
-import medlingos2 from "../img/medlingos-2.jpg";
-import medlingos3 from "../img/medlingos-3.jpg";
-import medlingos4 from "../img/medlingos-4.jpg";
+import medlingos from "../../img/medlingos.jpg";
+import medlingos1 from "../../img/medlingos-1.jpg";
+import medlingos2 from "../../img/medlingos-2.jpg";
+import medlingos3 from "../../img/medlingos-3.jpg";
+import medlingos4 from "../../img/medlingos-4.jpg";
 
 //import landing page
-import product from "../img/product.png";
+import product from "../../img/product.png";
 
 class Portfolio extends React.Component{
 

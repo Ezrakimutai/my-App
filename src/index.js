@@ -17,8 +17,6 @@ import 'bootstrap/dist/js/bootstrap.min';
 import './libs/easing';
 import 'lightbox2/dist/js/lightbox.min';
 
-import * as serviceWorker from './serviceWorker';
-
 //import components
 import Navbar from './components/navbar';
 import Intro from './components/intro';
@@ -40,5 +38,3 @@ ReactDOM.render(
 		<Preloader />
 	</React.Fragment>,
 document.getElementById('root'));
-
-serviceWorker.unregister();

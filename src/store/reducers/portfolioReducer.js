@@ -102,68 +102,92 @@ const initState = {
         {
             id: 'portfolio',
             headline: 'Portfolio',
-            subhead: 'Recent projects that mattered.',
+            subhead: 'Projects that mattered.',
             projects: [
                 {
                     title: 'Web UX',
                     summary: '',
+                    image: '',
+                    slides: [
+                        {
+                            image: '',
+                        },
+                        {
+                            image: '',
+                        },
+                    ],
                 },
                 {
                     title: 'Component Guides',
-                    summary: 'Style guides and visual components work great together.',
+                    summary: 'Style guides and visual components benefit everyone involved. These collaborations made us faster and polished.',
+                    image: '',
                 },
                 {
                     title: 'SaaS Coalition',
-                    summary: '',
-                },
-                {
-                    title: 'Mobile UX',
-                    summary: '',
-                },
-                {
-                    title: 'Optimized',
-                    summary: '',
+                    summary: 'Thinking outside your department breeds inovation and results.',
+                    image: '',
                 },
                 {
                     title: 'Personalized',
                     summary: '',
+                    image: '',
+                },
+                {
+                    title: 'Mobile UX',
+                    summary: '',
+                    image: '',
+                },
+                {
+                    title: 'Optimized',
+                    summary: '',
+                    image: '',
                 },
             ],
         },
         {
             id: 'art',
             headline: 'Sparks & Crafts',
-            subhead: 'Recent artwork, installs and collaboration.',
+            subhead: 'Artwork, installs and collaboration.',
             projects: [
                 {
                     id: 'final-approach-motel',
                     title: 'Final Approach Motel',
-                    summary: '',
+                    summary:
+                        'An immersive tiny bar experience of a mid-century, un-scale, hotel lobby. This “roach motel” features morphing wallpaper, resin poured roach wing chandelier, and a stained wooden bar. The staff are dressed as cockroaches of course. This piece will be installed at the Golden Guy Alley (24 tiny bars) at BRC 2019.',
+                    image: '',
                 },
                 {
                     id: 'popagenda',
-                    title: 'POPUP-AGENDA',
-                    summary: '',
+                    title: 'POP-AGENDA',
+                    summary: 'This mini food-truck serves popcorn and functions as a DJ booth. The volunteer employees wear 1950s period costumes (hats, bow ties, and aprons) while giving away snacks. This piece was, and will be, taken to CascadiaNW and SeaCompression.',
+                    image: '',
                 },
                 {
                     id: 'light-skirmish',
                     title: 'Light Skirmish',
-                    summary: '',
+                    summary:
+                        'Interactive two-player game comprised of a circular array of wifi-controlled multi-color LED stage lights and two large wireless nautical steering wheels. Players face one another across the circle and must spin their wheel… causing lights to illuminate in a series around the loop. The “spinning” lights decrease in speed with the game’s goal to stop on the opposing player.',
+                    image: '',
                 },
                 {
-                    id: 'summer-rain',
-                    title: 'Summer Rain',
-                    summary: '',
+                    id: 'stormbrella',
+                    title: 'Stormbrella',
+                    summary:
+                        'Provides a mobile stormy light show. A clear umbrella is lined with addressable LEDs on the spines, which display a random rain simulation. Occasionally thunder will strike at random intervals and strength. Care was taken to ensure natural effects. Useful to improve friends finding you.',
+                    image: '',
                 },
                 {
                     id: 'night-ballons',
                     title: 'Night Balloons',
-                    summary: '',
+                    summary:
+                        'A string of balloon lanterns, each with a microchipped RGB LED bulb, making them controllable inflatable light bulbs synchronized from an Arduino processor on the ground. The light patterns and simulated motion is done via phone/ethernet cords and connection terminals.',
+                    image: '',
                 },
                 {
                     id: 'radioator',
                     title: 'Radioator',
-                    summary: '',
+                    summary: 'A mobile radio station built on a golf cart chassis that broadcast mobile FM (25mW). It allowed vehicles and people to synchronize nearby; sometimes silently using ear phones (50 provided to guests), as well as synchronizing disparate speaker systems.',
+                    image: '',
                 },
             ],
         },

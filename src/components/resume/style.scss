@@ -1,0 +1,53 @@
+.work-box {
+    margin-bottom: 3rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fff;
+
+    &:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    .work-img {
+        display: block;
+        overflow: hidden;
+
+        img {
+            transition: all 1s;
+        }
+    }
+
+    .work-content {
+        padding: 1rem 3% 1rem 4%;
+
+        .w-title {
+            padding-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .w-like {
+            font-size: 2.5rem;
+            color: #56bc8a;
+            float: right;
+            line-height: 0;
+
+            .num-like {
+                font-size: 0.7rem;
+            }
+
+            a {
+                color: #56bc8a;
+            }
+        }
+
+        .w-more {
+            color: #4e4e4e;
+            font-size: 0.8rem;
+
+            .w-ctegory {
+                color: #666;
+            }
+        }
+    }
+}

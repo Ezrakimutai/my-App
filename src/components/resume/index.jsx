@@ -2,6 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 
+import './style.scss'
+
 import Job from './job'
 import Tool from './tool'
 
@@ -18,9 +20,11 @@ const Resume = props => {
                                         <div className="title-box-2">
                                             <h5 className="title-left">{props.headline}</h5>
                                         </div>
-                                        {props.summary.map(content => {
-                                            return <p className="lead">{content}</p>
-                                        })}
+                                        <div>
+                                            {props.summary.map(content => {
+                                                return <p className="lead">{content}</p>
+                                            })}
+                                        </div>
                                     </div>
                                     <p className="title-s font-weight-light">{props.toolsHeadline}</p>
                                     {props.tools.map(tool => (

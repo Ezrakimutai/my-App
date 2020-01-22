@@ -2,6 +2,7 @@ const initState = {
     meta: {
         title: 'My Portfolio',
         description: 'Lots of info about you.',
+        icon: '',
     },
     menu: {
         home: 'Hello',

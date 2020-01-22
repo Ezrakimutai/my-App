@@ -1,6 +1,6 @@
 import React from 'react'
 
-import aguaDeLuz from '../../img/aguaDeLuz.png'
+import aguaDeLuz from '../../img/doodle-3.png'
 
 export default props => {
     return (

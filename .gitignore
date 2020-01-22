@@ -13,7 +13,6 @@
 
 # content
 #/src/store/reducers/myReducer.js
-/public/img/*
 
 # misc
 .DS_Store

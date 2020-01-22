@@ -313,30 +313,6 @@ a:hover {
     border-radius: 50%;
 }
 
-/* Back to top button */
-
-.back-to-top {
-    position: fixed;
-    display: none;
-    background: #56bc8a;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
-}
-
-.back-to-top i {
-    padding-top: 12px;
-    color: #fff;
-}
-
 /* Prelaoder */
 
 #preloader {
@@ -444,23 +420,8 @@ BUTTON
     border-radius: 0.3rem;
 }
 
-@media (min-width: 577px) {
-    .counter-box {
-        margin-bottom: 1.8rem;
-    }
-}
-
 @media (min-width: 767px) {
     .about-mf .box-pl2 {
-        margin-top: 3rem;
-        padding-left: 0rem;
-    }
-
-    .card-blog {
-        margin-bottom: 3rem;
-    }
-
-    .contact-mf .box-pl2 {
         margin-top: 3rem;
         padding-left: 0rem;
     }
@@ -491,37 +452,6 @@ BUTTON
 
     .intro-single .intro-title {
         font-size: 3.5rem;
-    }
-
-    .testimonial-box .description {
-        padding: 0 5rem;
-    }
-
-    .post-box,
-    .form-comments,
-    .box-comments,
-    .widget-sidebar {
-        padding: 3rem;
-    }
-
-    .blog-wrapper .article-title {
-        font-size: 1.9rem;
-    }
-
-    .box-comments .list-comments .comment-author {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .testimonial-box .description {
-        padding: 0 8rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .testimonial-box .description {
-        padding: 0 13rem;
     }
 }
 

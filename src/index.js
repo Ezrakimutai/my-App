@@ -18,7 +18,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './img/icons/css/ionicons.css'
 import './img/font-awesome/css/font-awesome.css'
 import 'lightbox2/dist/css/lightbox.min.css'
-import './style.css'
+import './style.scss'
 
 // Browser JS
 import 'jquery/dist/jquery.min'

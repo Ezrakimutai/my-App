@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 
 import $ from 'jquery'
+import '../../libs/easing.js'
 
-import '../libs/easing.js'
+import './style.scss'
 
 export default () => {
     useEffect(() => {

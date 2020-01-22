@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 
 import $ from 'jquery'
 
+import './style.scss'
+
 export default () => {
     useEffect(() => {
         $(window).on('load', function() {

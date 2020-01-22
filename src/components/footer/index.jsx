@@ -4,12 +4,13 @@ import { compose } from 'redux'
 
 import Socials from './socials'
 
-import imageOverlay from '../../img/earth.jpg'
 import './style.scss'
 
 const Footer = props => {
+    const bgStyle = { backgroundImage: 'url(' + props.background + ')' }
+
     return (
-        <section className="paralax-mf footer-paralax bg-image sect-mt4 route" style={{ backgroundImage: 'url(' + imageOverlay + ')' }}>
+        <section className="paralax-mf footer-paralax bg-image sect-mt4 route" style={bgStyle}>
             <div className="overlay-mf"></div>
             <footer>
                 <div className="container">

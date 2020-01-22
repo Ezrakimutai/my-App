@@ -4,6 +4,8 @@ import { compose } from 'redux'
 
 import ProjectList from './projectList'
 
+import './style.scss'
+
 const Portfolio = props => {
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">

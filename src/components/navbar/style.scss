@@ -193,3 +193,15 @@
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+
+@media (min-width: 768px) {
+    .navbar-b.navbar-trans .nav-item,
+    .navbar-b.navbar-reduce .nav-item {
+        padding-left: 10px;
+    }
+
+    .navbar-b.navbar-trans .nav-link:before,
+    .navbar-b.navbar-reduce .nav-link:before {
+        margin-left: 18px;
+    }
+}

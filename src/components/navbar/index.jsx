@@ -4,10 +4,20 @@ import $ from 'jquery'
 
 import './style.scss'
 
+const NavItem = props => {
+    return (
+        <li className="nav-item">
+            <a className="nav-link js-scroll active" href={props.href}>
+                {props.label}
+            </a>
+        </li>
+    )
+}
+
 export default () => {
     useEffect(() => {
         const nav = $('nav')
-        let navHeight = nav.outerHeight()
+        const navHeight = nav.outerHeight()
 
         $('.navbar-toggler').on('click', function() {
             if (!$('#mainNav').hasClass('navbar-reduce')) {
@@ -36,7 +46,7 @@ export default () => {
 
         $('a.js-scroll[href*="#"]:not([href="#"])').on('click', function() {
             if (window.location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && window.location.hostname === this.hostname) {
-                var target = $(this.hash)
+                let target = $(this.hash)
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']')
                 if (target.length) {
                     $('html, body').animate(
@@ -66,26 +76,10 @@ export default () => {
                 </button>
                 <div className="navbar-collapse collapse justify-content-end" id="navbarDefault">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll active" href="#home">
-                                Hello
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll" href="#about">
-                                Resume
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll" href="#work">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll" href="#art">
-                                Artsy
-                            </a>
-                        </li>
+                        <NavItem label="Hello" href="#home" />
+                        <NavItem label="Resume" href="#about" />
+                        <NavItem label="Portfolio" href="#work" />
+                        <NavItem label="Artsy" href="#art" />
                     </ul>
                 </div>
             </div>

@@ -11,3 +11,29 @@ footer {
         margin-bottom: 0.3rem;
     }
 }
+
+.socials {
+    padding: 1.5rem 0;
+
+    li {
+        display: inline-block;
+    }
+
+    .ico-circle {
+        height: 45px;
+        width: 45px;
+        font-size: 2rem;
+        border-radius: 50%;
+        line-height: 1.4;
+        margin: 0 15px 0 0;
+        box-shadow: 0 0 0 3px #56bc8a;
+        transition: all 500ms ease;
+
+        &:hover {
+            background-color: #56bc8a;
+            color: #fff;
+            box-shadow: 0 0 0 3px #cde1f8;
+            transition: all 500ms ease;
+        }
+    }
+}

@@ -2,6 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import DocumentMeta from 'react-document-meta'
 
+import 'react-app-polyfill/ie11'
+import 'react-app-polyfill/stable'
+
 // Components
 import Navbar from './components/navbar'
 import Intro from './components/intro'

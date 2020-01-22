@@ -22,9 +22,9 @@ const initState = {
         typed: ['Web Developer', 'Front-end Developer', 'UX Designer', 'Data Analyst', 'Tinkerer'],
     },
     resume: {
-        headline: 'I develop, maintain, and refine web systems–',
+        headline: 'I develop, maintain, and refine web systems.',
         summary: [
-            'including: front-end code, content management backends and APIs, UX components, user data flow, logging metrics, enabling analytics, and directing projects. After 15 years in the industry, I believe in design systems, smart integrations, and open-source tools.',
+            'Including: front-end code, content management backends and APIs, UX components, user data flow, logging metrics, enabling analytics, and directing projects. After 15 years in the industry, I believe in design systems, smart integrations, and open-source tools.',
             'Visual portfolio available for interviews (web UX, style guides, mobile).',
         ],
         jobsHeadline: 'Work History',

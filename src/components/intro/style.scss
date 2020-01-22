@@ -64,3 +64,17 @@ font-weight: bolder;
 .intro-single .breadcrumb a {
     color: #fff;
 }
+
+@media (min-width: 768px) {
+    .intro .intro-title {
+        font-size: 4.5rem;
+    }
+
+    .intro .intro-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .intro-single .intro-title {
+        font-size: 3.5rem;
+    }
+}

@@ -191,43 +191,10 @@ a:hover {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Socials */
-
-.socials {
-    padding: 1.5rem 0;
-}
-
-.socials ul li {
-    display: inline-block;
-}
-
-.socials .ico-circle {
-    height: 45px;
-    width: 45px;
-    font-size: 2rem;
-    border-radius: 50%;
-    line-height: 1.4;
-    margin: 0 15px 0 0;
-    box-shadow: 0 0 0 3px #56bc8a;
-    transition: all 500ms ease;
-}
-
-.socials .ico-circle:hover {
-    background-color: #56bc8a;
-    color: #fff;
-    box-shadow: 0 0 0 3px #cde1f8;
-    transition: all 500ms ease;
-}
-
 /* Ul resect */
 
 .ul-resect,
-.socials ul,
-.list-ico,
-.blog-wrapper .post-meta ul,
-.box-comments .list-comments,
-.widget-sidebar .list-sidebar,
-.widget-tags ul {
+.socials ul {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
@@ -315,55 +282,6 @@ a:hover {
 
 /* Prelaoder */
 
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
-    background: #fff;
-}
-
-#preloader:before {
-    content: '';
-    position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid #f2f2f2;
-    border-top: 6px solid #56bc8a;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes animate-preloader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
 /*
 BUTTON
 */
@@ -431,38 +349,10 @@ BUTTON
     .box-shadow-full {
         padding: 3rem;
     }
-
-    .navbar-b.navbar-trans .nav-item,
-    .navbar-b.navbar-reduce .nav-item {
-        padding-left: 10px;
-    }
-
-    .navbar-b.navbar-trans .nav-link:before,
-    .navbar-b.navbar-reduce .nav-link:before {
-        margin-left: 18px;
-    }
-
-    .intro .intro-title {
-        font-size: 4.5rem;
-    }
-
-    .intro .intro-subtitle {
-        font-size: 2.5rem;
-    }
-
-    .intro-single .intro-title {
-        font-size: 3.5rem;
-    }
 }
 
 @media (max-width: 1024px) {
     .bg-image {
         background-attachment: scroll;
-    }
-}
-
-@media (max-width: 768px) {
-    .back-to-top {
-        bottom: 15px;
     }
 }

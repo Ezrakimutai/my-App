@@ -35,8 +35,8 @@ const store = createStore(rootReducer, {})
 
 const App = () => {
     const meta = {
-        title: 'Some Meta Title',
-        description: 'I am a description, and I can create multiple tags',
+        title: 'Josh Lind - Portfolio',
+        description: "All the info you need to know if I'm the right cadidate.",
         meta: {
             charset: 'utf-8',
             name: {

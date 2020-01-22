@@ -13,7 +13,7 @@ import Preloader from './components/preloader'
 
 // Style
 import 'normalize.css'
-import './animate.css'
+import './libs/animate.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import './img/icons/css/ionicons.css'
 import './img/font-awesome/css/font-awesome.css'

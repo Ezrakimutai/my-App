@@ -106,27 +106,27 @@ const initState = {
             projects: [
                 {
                     title: 'Component Guides',
-                    summary: 'Style guides and visual components benefit everyone involved. These collaborations made us faster and polished.',
+                    summary: 'Style guides and visual components that benefited everyone involved. These collaborations made us faster and polished.',
                     image: '',
                 },
                 {
                     title: 'SaaS Coalition',
-                    summary: 'Thinking outside your department breeds inovation and results.',
+                    summary: 'Examples of thinking outside my department to boost results in UX across teams.',
                     image: '',
                 },
                 {
                     title: 'Personalized',
-                    summary: '',
+                    summary: 'Example of making existing static UX user-aware for both lead conversion and customer delight.',
                     image: '',
                 },
                 {
                     title: 'Mobile UX',
-                    summary: '',
+                    summary: 'Specific example of pure mobie UI, beyond the assumption of responsive for all web presence.',
                     image: '',
                 },
                 {
                     title: 'Analysis Optimized',
-                    summary: '',
+                    summary: 'Smattering of examples of analyzing and building metrics, running behavior tests, and checking asumptions',
                     image: '',
                 },
             ],

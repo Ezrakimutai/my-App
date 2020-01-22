@@ -3,7 +3,7 @@ import React from 'react'
 import sampleImage from '../../img/sample.png'
 
 export default props => {
-    const imagePath = props.image ? '/img/' + props.image : sampleImage
+    const imagePath = props.image ? 'img/' + props.image : sampleImage
 
     return (
         <div className="work-box">

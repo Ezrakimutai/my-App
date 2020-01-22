@@ -9,7 +9,7 @@ import './style.scss'
 import sampleBg from '../../img/earth.jpg'
 
 const Footer = props => {
-    const imagePath = props.background ? '/img/' + props.background : sampleBg
+    const imagePath = props.background ? 'img/' + props.background : sampleBg
     const bgStyle = { backgroundImage: 'url(' + imagePath + ')' }
 
     return (

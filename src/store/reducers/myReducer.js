@@ -96,30 +96,35 @@ const initState = {
             subhead: 'Projects that mattered.',
             projects: [
                 {
-                    title: 'Component Guides',
+                    id: 'components-guides',
+                    title: 'Style & Component Guides',
                     summary: 'Style guides and visual components that benefited everyone involved. These collaborations made us faster and polished.',
                     image: 'doodle-3.png',
                     slides: [],
                 },
                 {
-                    title: 'SaaS Coalition',
+                    id: 'interdepartmental',
+                    title: 'Cross-team SaaS UIs',
                     summary: 'Examples of thinking outside my department to boost results in UX across teams.',
                     image: 'doodle-3.png',
                     slides: [],
                 },
                 {
+                    id: 'personalization',
                     title: 'Personalized',
                     summary: 'Example of making existing static UX user-aware for both lead conversion and customer delight.',
                     image: 'doodle-3.png',
                     slides: [],
                 },
                 {
+                    id: 'mobile',
                     title: 'Mobile UX',
                     summary: 'Specific example of pure mobie UI, beyond the assumption of responsive for all web presence.',
                     image: 'doodle-3.png',
                     slides: [],
                 },
                 {
+                    id: 'data-metrics-testing-optimize',
                     title: 'Analysis Optimized',
                     summary: 'Smattering of examples of analyzing and building metrics, running behavior tests, and checking asumptions',
                     image: 'doodle-3.png',

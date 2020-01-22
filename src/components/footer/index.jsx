@@ -6,8 +6,11 @@ import Socials from './socials'
 
 import './style.scss'
 
+import sampleBg from '../../img/earth.jpg'
+
 const Footer = props => {
-    const bgStyle = { backgroundImage: 'url(' + props.background + ')' }
+    const imagePath = props.background ? '/img/' + props.background : sampleBg
+    const bgStyle = { backgroundImage: 'url(' + imagePath + ')' }
 
     return (
         <section className="paralax-mf footer-paralax bg-image sect-mt4 route" style={bgStyle}>

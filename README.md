@@ -1,3 +1,11 @@
-## One-page Portfolio in React
+# One-page Portfolio (ReactJS)
 
-### [TODO list](https://github.com/doublejosh/react-portfolio/wiki)
+## Add Your Content
+
+1. Fork or clone the code repository with Git.
+1. Update the `/store/reducders/portfolioReducer.js` file.
+1. Add image files to the `public/img/` folder.
+1. Preview locally with the `npm run start` command.
+1. Publish with the `npm deploy` command. This requires creating a GitHub repo and turning on GitHub pages within settings.
+
+## [Todo list](https://github.com/doublejosh/react-portfolio/wiki)

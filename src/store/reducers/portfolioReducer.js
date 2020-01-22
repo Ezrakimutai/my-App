@@ -22,10 +22,10 @@ const initState = {
         typed: ['Web Developer', 'Front-end Developer', 'UX Designer', 'Data Analyst', 'Tinkerer'],
     },
     resume: {
-        headline: 'Resume',
+        headline: 'I develop, maintain, and refine web systems–',
         summary: [
-            'I develop, maintain, and refine web systems.',
-            'This includes: front-end code, content management and API backends, UX components, user data flow, collecting metrics, enabling analytics, and managing projects. I believe in design systems, smart integrations, and open-source tools.',
+            'including: front-end code, content management backends and APIs, UX components, user data flow, logging metrics, enabling analytics, and directing projects. After 15 years in the industry, I believe in design systems, smart integrations, and open-source tools.',
+            'Visual portfolio available for interviews (web UX, style guides, mobile).',
         ],
         jobsHeadline: 'Work History',
         jobs: [
@@ -56,7 +56,7 @@ const initState = {
                 summary: 'I helped create a place-based social network prototype for “third-place” public spaces.',
             },
             {
-                title: 'Lead Developer / UX',
+                title: 'Lead Dev / UX',
                 company: 'YourSports',
                 timeframe: '2006-2007',
                 summary: ' I built web UI, designed mocks and provided technical leadership for a funded startup.',
@@ -78,19 +78,19 @@ const initState = {
         tools: [
             {
                 name: 'Languages',
-                list: 'JavaScript, SCSS, SQL, PHP (all 10+ years), C++ (hobby)',
+                list: 'JavaScript, SCSS, PHP, SQL',
             },
             {
                 name: 'Frameworks',
-                list: 'MetalsmithJS, Drupal, React',
+                list: 'React, MetalsmithJS, Drupal',
             },
             {
                 name: 'Data Storage',
-                list: 'mySQL, Firebase, CMS APIs, Prismic, BigQuery, MixPanel, NewRelic',
+                list: 'mySQL, Firebase, CMS, MixPanel, NewRelic, BigQuery',
             },
             {
                 name: 'Utilities',
-                list: 'Git, Grunt, Drush, AWS, CircleCI/Travis',
+                list: 'Git, npm, Grunt, Drush, CircleCI/Travis',
             },
             {
                 name: 'Design Software',

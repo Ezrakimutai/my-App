@@ -24,7 +24,7 @@ const Intro = props => {
                         </p>
                         <p className="pt-3">
                             <a className="btn btn-primary btn-lg js-scroll px-4" href="#about" role="button">
-                                <i class="ion-arrow-down-c"></i>
+                                <i className="ion-arrow-down-c"></i>
                             </a>
                         </p>
                     </div>

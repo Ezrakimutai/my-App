@@ -42,8 +42,8 @@ class Navbar extends React.Component {
                         {
                             scrollTop: target.offset().top - navHeight + 5,
                         },
-                        1000,
-                        'easeInExpo'
+                        600,
+                        'easeInOutExpo'
                     )
                     return false
                 }

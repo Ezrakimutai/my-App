@@ -17,24 +17,30 @@ const Resume = props => {
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="pt-4 pb-2 mb-5 pt-md-0">
-                                        <div className="title-box-2">
-                                            <h5 className="title-left">{props.headline}</h5>
-                                        </div>
                                         <div>
-                                            {props.summary.map(content => {
-                                                return <p className="lead">{content}</p>
+                                            <p className="lead font-weight-normal">{props.headline}</p>
+                                            {props.summary.map((content, i) => {
+                                                return (
+                                                    <p className="lead" key={i}>
+                                                        {content}
+                                                    </p>
+                                                )
                                             })}
                                         </div>
                                     </div>
-                                    <p className="title-s font-weight-light">{props.toolsHeadline}</p>
-                                    {props.tools.map(tool => (
-                                        <Tool {...tool} />
+                                    <div className="title-box-2">
+                                        <h5 className="title-left">{props.toolsHeadline}</h5>
+                                    </div>
+                                    {props.tools.map((tool, i) => (
+                                        <Tool {...tool} key={i} />
                                     ))}
                                 </div>
                                 <div className="col-md-6">
-                                    <p className="title-s font-weight-light">{props.jobsHeadline}</p>
-                                    {props.jobs.map(job => (
-                                        <Job {...job} />
+                                    <div className="title-box-2">
+                                        <h5 className="title-left">{props.jobsHeadline}</h5>
+                                    </div>
+                                    {props.jobs.map((job, i) => (
+                                        <Job {...job} key={i} />
                                     ))}
                                 </div>
                             </div>

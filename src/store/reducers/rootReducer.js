@@ -1,4 +1,4 @@
-import portfolioReducer from './sampleReducer'
+import portfolioReducer from './myReducer'
 import { combineReducers } from 'redux'
 
 const rootReducer = combineReducers({

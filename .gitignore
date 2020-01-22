@@ -12,7 +12,7 @@
 /build
 
 # content
-/src/store/reducers/
+#/src/store/reducers/myReducer.js
 /public/img/
 
 # misc

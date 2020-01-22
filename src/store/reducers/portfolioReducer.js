@@ -1,21 +1,11 @@
 const initState = {
     meta: {
-        browserTitle: 'Your Name - portfolio',
-        social: [
-            {
-                service: 'tumblr',
-                link: 'https://doublejosh.com/archive',
-            },
-            {
-                service: 'github',
-                link: 'https://github.com/doublejosh',
-            },
-            {
-                service: 'linkedin',
-                link: 'https://www.linkedin.com/in/doublejosh',
-            },
-        ],
-        footerMessage: 'Thanks for reading.',
+        title: 'Josh Lind - Portfolio',
+        description: "All the info you need to know if I'm the right cadidate.",
+    },
+    menu: {
+        home: 'Hello',
+        about: 'Resume',
     },
     intro: {
         headline: 'Josh is profesh.',
@@ -101,6 +91,7 @@ const initState = {
     sections: [
         {
             id: 'portfolio',
+            menu: 'Portfolio',
             headline: 'Portfolio',
             subhead: 'Projects that mattered.',
             projects: [
@@ -133,6 +124,7 @@ const initState = {
         },
         {
             id: 'art',
+            menu: 'Artsy',
             headline: 'Sparks & Crafts',
             subhead: 'Artwork, installs and collaboration.',
             projects: [
@@ -179,6 +171,23 @@ const initState = {
             ],
         },
     ],
+    footer: {
+        social: [
+            {
+                service: 'tumblr',
+                link: 'https://doublejosh.com/archive',
+            },
+            {
+                service: 'github',
+                link: 'https://github.com/doublejosh',
+            },
+            {
+                service: 'linkedin',
+                link: 'https://www.linkedin.com/in/doublejosh',
+            },
+        ],
+        footerMessage: 'Thanks for reading.',
+    },
 }
 
 export default (state = initState, action) => {

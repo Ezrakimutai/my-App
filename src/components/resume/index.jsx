@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 
 import List from './list'
+import Job from './job'
+import Tool from './tool'
 
 const ResumeIntro = props => {
     return (

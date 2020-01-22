@@ -15,9 +15,9 @@ const Footer = props => {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 text-center">
-                            <Socials list={props.meta.social} />
+                            <Socials list={props.social} />
                             <div className="copyright-box">
-                                <p className="copyright">{props.meta.footerMessage}</p>
+                                <p className="copyright">{props.footerMessage}</p>
                             </div>
                         </div>
                     </div>
@@ -28,9 +28,7 @@ const Footer = props => {
 }
 
 const mapStateToProps = state => {
-    return {
-        meta: state.portfolio.meta,
-    }
+    return state.portfolio.footer
 }
 
 export default compose(connect(mapStateToProps))(Footer)

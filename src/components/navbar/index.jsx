@@ -1,20 +1,14 @@
 import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
+import NavItem from './navItem'
 
 import $ from 'jquery'
 
 import './style.scss'
 
-const NavItem = props => {
-    return (
-        <li className="nav-item">
-            <a className="nav-link js-scroll active" href={props.href}>
-                {props.label}
-            </a>
-        </li>
-    )
-}
-
-export default () => {
+const NavBar = props => {
     useEffect(() => {
         const nav = $('nav')
         const navHeight = nav.outerHeight()
@@ -76,13 +70,20 @@ export default () => {
                 </button>
                 <div className="navbar-collapse collapse justify-content-end" id="navbarDefault">
                     <ul className="navbar-nav">
-                        <NavItem label="Hello" href="#home" />
-                        <NavItem label="Resume" href="#about" />
-                        <NavItem label="Portfolio" href="#work" />
-                        <NavItem label="Artsy" href="#art" />
+                        <NavItem label={props.menu.home} href="#home" />
+                        <NavItem label={props.menu.about} href="#about" />
+                        {props.sections.map(section => (
+                            <NavItem label={section.menu} href={'#' + section.id} />
+                        ))}
                     </ul>
                 </div>
             </div>
         </nav>
     )
 }
+
+const mapStateToProps = state => {
+    return state.portfolio
+}
+
+export default compose(connect(mapStateToProps))(NavBar)

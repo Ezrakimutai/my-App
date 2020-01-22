@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import DocumentMeta from 'react-document-meta'
+
+import { ReactTitle } from 'react-meta-tags'
 
 import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
 
 // Components
+import Document from './components/document'
 import Navbar from './components/navbar'
 import Intro from './components/intro'
 import Resume from './components/resume'
@@ -37,29 +39,17 @@ import rootReducer from './store/reducers/rootReducer'
 const store = createStore(rootReducer, {})
 
 const App = () => {
-    const meta = {
-        title: 'Josh Lind - Portfolio',
-        description: "All the info you need to know if I'm the right cadidate.",
-        meta: {
-            charset: 'utf-8',
-            name: {
-                keywords: 'react,meta,document,html,tags',
-            },
-        },
-    }
-
     return (
-        <DocumentMeta {...meta}>
-            <Provider store={store}>
-                <Navbar />
-                <Intro />
-                <Resume />
-                <Portfolio />
-                <Footer />
-                <BackToTop />
-                <Preloader />
-            </Provider>
-        </DocumentMeta>
+        <Provider store={store}>
+            <Document />
+            <Navbar />
+            <Intro />
+            <Resume />
+            <Portfolio />
+            <Footer />
+            <BackToTop />
+            <Preloader />
+        </Provider>
     )
 }
 

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 
 import './stars.scss'
+import './style.scss'
 import Typed from 'react-typed'
 
 const Intro = props => {

@@ -1,0 +1,66 @@
+.intro {
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.intro .intro-content {
+    text-align: center;
+    position: absolute;
+}
+
+.intro .overlay-intro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.intro .intro-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.intro .intro-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* .intro .text-slider-items {
+font-weight: bolder;
+} */
+
+.intro-single {
+    height: 350px;
+}
+
+.intro-single .intro-content {
+    margin-top: 30px;
+}
+
+.intro-single .intro-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.intro-single .breadcrumb {
+    background-color: transparent;
+    color: #56bc8a;
+}
+
+.intro-single .breadcrumb .breadcrumb-item:before {
+    color: #cde1f8;
+}
+
+.intro-single .breadcrumb .breadcrumb-item.active {
+    color: #cde1f8;
+}
+
+.intro-single .breadcrumb a {
+    color: #fff;
+}

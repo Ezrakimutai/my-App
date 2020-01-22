@@ -13,7 +13,7 @@ const Resume = props => {
             <div className="container">
                 <div className="row" id="about">
                     <div className="col-sm-12">
-                        <div className="box-shadow-full">
+                        <div className="box-shadow-full my-4">
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="pt-4 pb-2 mb-5 pt-md-0">

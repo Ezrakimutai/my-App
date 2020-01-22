@@ -4,9 +4,15 @@
     backface-visibility: hidden;
     background-color: #fff;
 
-    &:hover img {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
+    &:hover {
+        img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+        .w-like {
+            color: #888 !important;
+        }
     }
 
     .work-img {
@@ -28,9 +34,10 @@
 
         .w-like {
             font-size: 2.5rem;
-            color: #56bc8a;
+            color: #aaa;
             float: right;
             line-height: 0;
+            transition: color 0.25s;
 
             .num-like {
                 font-size: 0.7rem;

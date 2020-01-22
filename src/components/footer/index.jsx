@@ -2,7 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 
-import imageOverlay from '../img/earth.jpg'
+import imageOverlay from '../../img/earth.jpg'
+import './style.scss'
 
 const Footer = props => {
     return (

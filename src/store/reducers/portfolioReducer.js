@@ -105,19 +105,6 @@ const initState = {
             subhead: 'Projects that mattered.',
             projects: [
                 {
-                    title: 'Web UX',
-                    summary: '',
-                    image: '',
-                    slides: [
-                        {
-                            image: '',
-                        },
-                        {
-                            image: '',
-                        },
-                    ],
-                },
-                {
                     title: 'Component Guides',
                     summary: 'Style guides and visual components benefit everyone involved. These collaborations made us faster and polished.',
                     image: '',
@@ -138,7 +125,7 @@ const initState = {
                     image: '',
                 },
                 {
-                    title: 'Optimized',
+                    title: 'Analysis Optimized',
                     summary: '',
                     image: '',
                 },
@@ -149,6 +136,12 @@ const initState = {
             headline: 'Sparks & Crafts',
             subhead: 'Artwork, installs and collaboration.',
             projects: [
+                {
+                    id: 'crystal-experiment',
+                    title: 'Crystal Experiment',
+                    summary: 'A mobile radio station built on a golf cart chassis that broadcast mobile FM (25mW). It allowed vehicles and people to synchronize nearby; sometimes silently using ear phones (50 provided to guests), as well as synchronizing disparate speaker systems.',
+                    image: '',
+                },
                 {
                     id: 'final-approach-motel',
                     title: 'Final Approach Motel',
@@ -181,12 +174,6 @@ const initState = {
                     title: 'Night Balloons',
                     summary:
                         'A string of balloon lanterns, each with a microchipped RGB LED bulb, making them controllable inflatable light bulbs synchronized from an Arduino processor on the ground. The light patterns and simulated motion is done via phone/ethernet cords and connection terminals.',
-                    image: '',
-                },
-                {
-                    id: 'radioator',
-                    title: 'Radioator',
-                    summary: 'A mobile radio station built on a golf cart chassis that broadcast mobile FM (25mW). It allowed vehicles and people to synchronize nearby; sometimes silently using ear phones (50 provided to guests), as well as synchronizing disparate speaker systems.',
                     image: '',
                 },
             ],

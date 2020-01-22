@@ -3,7 +3,7 @@
 ## Add Your Content
 
 1. Fork or clone the code repository with Git
-1. Overwrite `myReducer.js` with `/store/reducers/sampleReducer.js`
+1. Overwrite `myReducer.js` with `/src/store/reducers/sampleReducer.js`
 1. Update the content.
 1. Add image files to the `public/img/` folder
 1. Preview locally with the `npm run start` command

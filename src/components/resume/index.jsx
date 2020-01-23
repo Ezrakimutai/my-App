@@ -25,7 +25,7 @@ const Resume = props => {
     return (
         <div className="container about-mf sect-pt4 route">
             <div className="row" id="about">
-                <div className="col-sm-12 box-shadow-full my-4">
+                <div className="col-sm-12 box-shadow-full">
                     <div className="row">
                         <div className="col-md-6">
                             <ResumeIntro {...props} />

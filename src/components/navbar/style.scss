@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .navbar-b {
     transition: all 0.5s ease-in-out;
     background-color: transparent;
@@ -79,26 +81,26 @@
 }
 
 .navbar-b.navbar-reduce .nav-link {
-    color: #56bc8a;
+    color: $primary;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-    background-color: #56bc8a;
+    background-color: $primary;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-    color: #56bc8a;
+    color: $primary;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-    color: #56bc8a;
+    color: $primary;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-    color: #56bc8a;
+    color: $primary;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -130,13 +132,13 @@
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-    background-color: #56bc8a;
+    background-color: $primary;
     color: #fff;
     transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-    background-color: #56bc8a;
+    background-color: $primary;
 }
 
 /* Hamburger Navbar */

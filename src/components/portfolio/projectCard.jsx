@@ -10,7 +10,7 @@ export default props => {
     return (
         <React.Fragment>
             <a href={imagePath} data-lightbox={'gallery-' + props.project}>
-                <Card>
+                <Card className="shadow-sm">
                     <Card.Img variant="top" src={imagePath} alt={props.title} />
                     <Card.Body>
                         <Card.Title>{props.title}</Card.Title>

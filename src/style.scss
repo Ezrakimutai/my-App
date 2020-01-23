@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-    color: #56bc8a;
+    color: $primary;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
 }
@@ -34,7 +34,7 @@ a:hover {
 }
 
 .color-a {
-    color: #56bc8a;
+    color: $primary;
 }
 
 .color-d {
@@ -85,7 +85,7 @@ a:hover {
 }
 
 .overlay-mf {
-    background-color: #56bc8a;
+    background-color: $primary;
 }
 
 .overlay-mf {
@@ -155,7 +155,7 @@ a:hover {
 .line-mf {
     width: 40px;
     height: 5px;
-    background-color: #56bc8a;
+    background-color: $primary;
     margin: 0 auto;
 }
 
@@ -174,7 +174,7 @@ a:hover {
     content: '';
     position: absolute;
     height: 3px;
-    background-color: #56bc8a;
+    background-color: $primary;
     width: 100px;
     bottom: -12px;
 }
@@ -208,7 +208,7 @@ a:hover {
 }
 
 .list-ico span {
-    color: #56bc8a;
+    color: $primary;
     margin-right: 10px;
 }
 
@@ -222,7 +222,7 @@ a:hover {
     line-height: 1.55;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 0 0 10px #56bc8a;
+    box-shadow: 0 0 0 10px $primary;
     display: block;
 }
 
@@ -269,7 +269,7 @@ a:hover {
     position: fixed;
     width: 42px;
     height: 42px;
-    background-color: #56bc8a;
+    background-color: $primary;
     opacity: 0.7;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -316,7 +316,7 @@ BUTTON
 }
 
 .button-a {
-    background-color: #56bc8a;
+    background-color: $primary;
     color: #fff;
     border-color: #cde1f8;
 }
@@ -331,7 +331,7 @@ BUTTON
 }
 
 .btn-primary {
-    background-color: #56bc8a;
+    background-color: $primary;
     border-color: #369c6a;
 }
 .btn-lg {

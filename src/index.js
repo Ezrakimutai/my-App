@@ -18,7 +18,7 @@ import Preloader from './components/preloader'
 
 // Style
 import 'normalize.css'
-import './libs/animate.css'
+import 'animate.css/animate.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import './img/icons/css/ionicons.css'
 import './img/font-awesome/css/font-awesome.css'
@@ -29,7 +29,7 @@ import './style.scss'
 import 'jquery/dist/jquery.min'
 import 'popper.js/dist/popper.min'
 import 'bootstrap/dist/js/bootstrap.min'
-import './libs/easing'
+import 'jquery.easing'
 import 'lightbox2/dist/js/lightbox.min'
 
 // Data

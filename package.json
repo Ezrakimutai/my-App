@@ -4,7 +4,7 @@
     "private": true,
     "homepage": "https://doublejosh.github.com/react-portfolio",
     "dependencies": {
-        "bootstrap": "^4.3.1",
+        "bootstrap": "^4.4.1",
         "gh-pages": "^2.0.1",
         "jquery": "^3.4.1",
         "lightbox2": "^2.11.0",
@@ -12,6 +12,7 @@
         "normalize.css": "^8.0.1",
         "popper.js": "^1.15.0",
         "react": "^16.8.6",
+        "react-bootstrap": "^1.0.0-beta.16",
         "react-dom": "^16.8.6",
         "react-meta-tags": "^0.7.4",
         "react-redux": "^7.1.3",

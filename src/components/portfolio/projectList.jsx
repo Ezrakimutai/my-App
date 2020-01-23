@@ -16,7 +16,7 @@ export default props => {
             </div>
             <div className="row mb-4">
                 {props.projects.map(project => (
-                    <div className="col-xl-4 col-md-6" key={project.title}>
+                    <div className="col-xl-4 col-md-6 mb-4" key={project.title}>
                         <ProjectCard {...project} project={props.id} />
                     </div>
                 ))}

@@ -5,6 +5,7 @@
 
 .card {
     overflow: hidden;
+    transition: border 0.5s;
 
     .card-body {
         z-index: 10;
@@ -21,6 +22,7 @@
         transition: all 0.5s;
     }
     &:hover {
+        border-color: $primary;
         img {
             -webkit-transform: scale(1.5);
             transform: scale(1.5);

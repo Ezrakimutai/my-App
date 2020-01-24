@@ -73,7 +73,7 @@ const NavBar = props => {
                         <NavItem label={props.menu.home} href="#home" />
                         <NavItem label={props.menu.about} href="#about" />
                         {props.sections.map(section => (
-                            <NavItem label={section.menu} href={'#' + section.id} />
+                            <NavItem label={section.menu} key={section.id} href={'#' + section.id} />
                         ))}
                     </ul>
                 </div>

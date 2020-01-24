@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 
-import ProjectList from './projectList'
+import ProjectSet from './projectSet'
 
 import './style.scss'
 
@@ -11,7 +11,7 @@ const Portfolio = props => {
         <section id="work" className="portfolio-mf sect-pt4 route">
             <div className="container">
                 {props.sections.map((section, i) => (
-                    <ProjectList {...section} key={i} />
+                    <ProjectSet {...section} key={i} />
                 ))}
             </div>
         </section>

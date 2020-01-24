@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { ReactTitle } from 'react-meta-tags'
-
 import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
 
@@ -22,7 +20,6 @@ import 'animate.css/animate.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import './img/icons/css/ionicons.css'
 import './img/font-awesome/css/font-awesome.css'
-import 'lightbox2/dist/css/lightbox.min.css'
 import './style.scss'
 
 // Browser JS

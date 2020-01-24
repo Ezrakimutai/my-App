@@ -9,11 +9,9 @@ import './style.scss'
 const Portfolio = props => {
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">
-            <div className="container">
-                {props.sections.map((section, i) => (
-                    <ProjectSet {...section} key={i} />
-                ))}
-            </div>
+            {props.sections.map((section, i) => (
+                <ProjectSet {...section} key={i} />
+            ))}
         </section>
     )
 }

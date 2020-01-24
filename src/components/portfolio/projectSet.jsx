@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 
-import ProjectCard from './projectCard'
+import { Container, Row, Col } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
+
+import ProjectCard from './projectCard'
 
 import sampleImage from '../../img/sample.png'
 
@@ -17,17 +19,15 @@ export default props => {
     let images = []
 
     return (
-        <React.Fragment>
-            <div className="row" id={props.id}>
-                <div className="col-sm-12">
-                    <div className="title-box text-center">
-                        <h3 className="title-a">{props.headline}</h3>
-                        <p className="subtitle-a">{props.subhead}</p>
-                        <div className="line-mf"></div>
-                    </div>
+        <Container>
+            <Row id={props.id} className="text-center">
+                <div className="title-box">
+                    <h3 className="title-a">{props.headline}</h3>
+                    <p className="subtitle-a">{props.subhead}</p>
+                    <div className="line-mf"></div>
                 </div>
-            </div>
-            <div className="row mb-4 pb-4">
+            </Row>
+            <Row className="mb-4 pb-4">
                 {props.projects.map((project, i) => {
                     const imagePath = project.image ? 'img/' + project.image : sampleImage
                     images.push({ source: imagePath })
@@ -39,7 +39,7 @@ export default props => {
                         </React.Fragment>
                     )
                 })}
-            </div>
+            </Row>
             <ModalGateway>
                 {modalIsOpen ? (
                     <Modal onClose={() => toggleModal()}>
@@ -47,6 +47,6 @@ export default props => {
                     </Modal>
                 ) : null}
             </ModalGateway>
-        </React.Fragment>
+        </Container>
     )
 }

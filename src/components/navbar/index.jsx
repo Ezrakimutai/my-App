@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 
+import { Container } from 'react-bootstrap'
+
 import NavItem from './navItem'
 
 import $ from 'jquery'
@@ -62,7 +64,7 @@ const NavBar = props => {
 
     return (
         <nav className="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-            <div className="container">
+            <Container>
                 <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -77,7 +79,7 @@ const NavBar = props => {
                         ))}
                     </ul>
                 </div>
-            </div>
+            </Container>
         </nav>
     )
 }

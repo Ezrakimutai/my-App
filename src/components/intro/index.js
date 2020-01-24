@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
+import { Container } from 'react-bootstrap'
 
 import './stars.scss'
 import './style.scss'
@@ -14,7 +15,7 @@ const Intro = props => {
             <div id="stars3" />
             <div className="intro-content display-table">
                 <div className="table-cell">
-                    <div className="container">
+                    <Container>
                         <h1 className="intro-title mb-4">{props.headline}</h1>
                         <p className="intro-subtitle">
                             <span className="text-slider-items"></span>
@@ -27,7 +28,7 @@ const Intro = props => {
                                 <i className="ion-arrow-down-c"></i>
                             </a>
                         </p>
-                    </div>
+                    </Container>
                 </div>
             </div>
         </div>

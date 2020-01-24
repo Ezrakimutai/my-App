@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 
 import ProjectCard from './projectCard'
+import TitleBox from '../titleBox'
 
 import sampleImage from '../../img/sample.png'
 
@@ -21,11 +22,7 @@ export default props => {
     return (
         <Container>
             <Row id={props.id} className="text-center">
-                <div className="title-box">
-                    <h3 className="title-a">{props.headline}</h3>
-                    <p className="subtitle-a">{props.subhead}</p>
-                    <div className="line-mf"></div>
-                </div>
+                <TitleBox headline={props.headline} subhead={props.subhead} />
             </Row>
             <Row className="mb-4 pb-4">
                 {props.projects.map((project, i) => {

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import TitleBox from '../titleBox'
 import Job from './job'
 import Tool from './tool'
 
@@ -9,9 +10,7 @@ export default props => {
 
     return (
         <React.Fragment>
-            <div className="title-box-2">
-                <h5 className="title-left">{props.headline}</h5>
-            </div>
+            <TitleBox headline={props.headline} box="title-box-2" title="title-left" />
             {props.list.map((item, i) => (
                 <TagName {...item} key={i} />
             ))}

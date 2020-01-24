@@ -27,7 +27,6 @@ import 'jquery/dist/jquery.min'
 import 'popper.js/dist/popper.min'
 import 'bootstrap/dist/js/bootstrap.min'
 import 'jquery.easing'
-import 'lightbox2/dist/js/lightbox.min'
 
 // Data
 import { Provider } from 'react-redux'

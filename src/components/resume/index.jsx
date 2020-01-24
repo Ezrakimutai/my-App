@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import List from './list'
 
@@ -21,21 +22,21 @@ const ResumeIntro = props => {
 
 const Resume = props => {
     return (
-        <div className="container about-mf sect-pt4 route">
-            <div className="row" id="about">
-                <div className="col-sm-12 box-shadow-full">
-                    <div className="row">
-                        <div className="col-md-6">
+        <Container className="about-mf sect-pt4 route">
+            <Row id="about">
+                <Col className="shadow-sm p-5 bg-light">
+                    <Row>
+                        <Col md={6}>
                             <ResumeIntro {...props} />
                             <List headline={props.toolsHeadline} list={props.tools} tag="tool" />
-                        </div>
-                        <div className="col-md-6">
+                        </Col>
+                        <Col md={6}>
                             <List headline={props.jobsHeadline} list={props.jobs} tag="job" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 

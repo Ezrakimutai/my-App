@@ -1,6 +1,13 @@
 import React from 'react'
 
-export default props => (
+interface TitleBoxProps {
+    box: string
+    title: string
+    headline: string
+    subhead: string
+}
+
+export default (props: TitleBoxProps) => (
     <div className={props.box || 'title-box'}>
         <h3 className={props.title || 'title-a'}>{props.headline}</h3>
         <p className="subtitle-a">{props.subhead}</p>

@@ -4,6 +4,10 @@
     "private": true,
     "homepage": "https://doublejosh.github.com/react-portfolio",
     "dependencies": {
+        "@types/jquery": "^3.3.31",
+        "@types/node": "^13.5.0",
+        "@types/react": "^16.9.19",
+        "@types/react-dom": "^16.9.5",
         "animate.css": "^3.7.2",
         "bootstrap": "^4.4.1",
         "gh-pages": "^2.0.1",
@@ -22,7 +26,8 @@
         "react-scripts": "^3.3.0",
         "react-typed": "^1.1.2",
         "redux": "^4.0.5",
-        "typed.js": "^2.0.10"
+        "typed.js": "^2.0.10",
+        "typescript": "^3.7.5"
     },
     "scripts": {
         "predeploy": "npm run build",
@@ -55,7 +60,6 @@
         "eslint-plugin-react-hooks": "^2.3.0",
         "prettier": "^1.19.1",
         "source-map-loader": "^0.2.4",
-        "ts-loader": "^6.2.1",
-        "typescript": "^3.7.4"
+        "ts-loader": "^6.2.1"
     }
 }

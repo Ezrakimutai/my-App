@@ -15,7 +15,11 @@ export const List: React.FC<ListProps> = props => {
 
     return (
         <React.Fragment>
-            <TitleBox headline={props.headline} box="title-box-2" title="title-left" />
+            <TitleBox
+                headline={props.headline}
+                box="title-box-2"
+                title="title-left"
+            />
             {props.list.map((item, i) => (
                 <TagName {...item} key={i} />
             ))}

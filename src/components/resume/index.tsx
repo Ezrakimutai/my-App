@@ -20,10 +20,18 @@ export const Resume: React.FC<ResumeProps> = props => (
                 <Row>
                     <Col md={6}>
                         <Intro {...props} />
-                        <List headline={props.toolsHeadline} list={props.tools} tag="tool" />
+                        <List
+                            headline={props.toolsHeadline}
+                            list={props.tools}
+                            tag="tool"
+                        />
                     </Col>
                     <Col md={6}>
-                        <List headline={props.jobsHeadline} list={props.jobs} tag="job" />
+                        <List
+                            headline={props.jobsHeadline}
+                            list={props.jobs}
+                            tag="job"
+                        />
                     </Col>
                 </Row>
             </Col>

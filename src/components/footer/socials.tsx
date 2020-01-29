@@ -1,6 +1,15 @@
 import React from 'react'
 
-export default props => {
+interface SocialsItem {
+    service: string
+    link: string
+}
+
+interface SocialsProps {
+    list: SocialsItem[]
+}
+
+export default (props: SocialsProps) => {
     return (
         <ul className="socials">
             {props.list.map(social => (

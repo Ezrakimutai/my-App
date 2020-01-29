@@ -1,12 +1,17 @@
 import React from 'react'
-
 import TitleBox from '../titleBox'
 import Job from './job'
 import Tool from './tool'
 
-export default props => {
-    const components = { job: Job, tool: Tool }
-    const TagName = components[props.tag] || 'job'
+export interface ListProps {
+    headline: string
+    list: object[]
+    tag: string
+}
+
+export const List: React.FC<ListProps> = props => {
+    const components: any = { job: Job, tool: Tool }
+    const TagName: any = components[props.tag || 'job']
 
     return (
         <React.Fragment>
@@ -17,3 +22,5 @@ export default props => {
         </React.Fragment>
     )
 }
+
+export default List

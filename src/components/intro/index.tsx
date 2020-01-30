@@ -1,13 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
+import { RootState } from '../../store/myTypes'
 import { Container } from 'react-bootstrap'
 
 import './stars.scss'
 import './style.scss'
 import Typed from 'react-typed'
 
-const Intro = props => {
+interface IntroProps {
+    headline?: string
+    typed?: string[]
+}
+
+const Intro = (props: IntroProps) => {
     return (
         <div id="home" className="intro route bg-image background">
             <div id="stars" />
@@ -20,11 +26,21 @@ const Intro = props => {
                         <p className="intro-subtitle">
                             <span className="text-slider-items"></span>
                             <strong className="text-slider">
-                                <Typed strings={props.typed} typeSpeed={80} backDelay={1100} backSpeed={30} loop />
+                                <Typed
+                                    strings={props.typed}
+                                    typeSpeed={80}
+                                    backDelay={1100}
+                                    backSpeed={30}
+                                    loop
+                                />
                             </strong>
                         </p>
                         <p className="pt-3">
-                            <a className="btn btn-primary btn-lg js-scroll px-4" href="#about" role="button">
+                            <a
+                                className="btn btn-primary btn-lg js-scroll px-4"
+                                href="#about"
+                                role="button"
+                            >
                                 <i className="ion-arrow-down-c"></i>
                             </a>
                         </p>
@@ -35,7 +51,7 @@ const Intro = props => {
     )
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: RootState) => {
     return state.portfolio.intro
 }
 

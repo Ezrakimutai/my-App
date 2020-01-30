@@ -2,10 +2,12 @@ import React from 'react'
 import TitleBox from '../titleBox'
 import Job from './job'
 import Tool from './tool'
+import { ToolProps } from './tool'
+import { JobProps } from './job'
 
 export interface ListProps {
     headline: string
-    list: object[]
+    list: (JobProps | ToolProps)[]
     tag: string
 }
 

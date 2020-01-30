@@ -1,11 +1,15 @@
 import React from 'react'
-
 import Card from 'react-bootstrap/Card'
-
 import sampleImage from '../../img/sample.png'
 
-export default props => {
-    const imagePath = props.image ? 'img/' + props.image : sampleImage
+export interface ProjectCardProps {
+    image?: string
+    title: string
+    summary: string
+}
+
+export const projectCard: React.FC<ProjectCardProps> = props => {
+    const imagePath: string = props.image ? 'img/' + props.image : sampleImage
 
     return (
         <Card className="shadow-sm">
@@ -17,3 +21,5 @@ export default props => {
         </Card>
     )
 }
+
+export default projectCard

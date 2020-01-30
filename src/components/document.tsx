@@ -1,10 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
+import { RootState } from '../store/myTypes'
 import MetaTags from 'react-meta-tags'
 
-const Document = props => {
-    const iconPath = props.icon ? '/img/' + props.icon : 'https://reactjs.org/favicon.ico'
+export interface DocumentProps {
+    icon?: string
+    title: string
+    description: string
+}
+
+export const Document: React.FC<DocumentProps> = props => {
+    const iconPath = props.icon
+        ? '/img/' + props.icon
+        : 'https://reactjs.org/favicon.ico'
 
     return (
         <React.Fragment>
@@ -18,7 +27,7 @@ const Document = props => {
     )
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: RootState) => {
     return state.portfolio.meta
 }
 

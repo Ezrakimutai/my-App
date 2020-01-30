@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-
 import { Container, Row } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
-
 import ProjectCard from './projectCard'
 import TitleBox from '../titleBox'
-
 import sampleImage from '../../img/sample.png'
+
+// @todo Convert to TS, waiting on a fix from react-images
+// https://github.com/doublejosh/react-portfolio/issues/1
 
 export default props => {
     const [modalIsOpen, setModal] = useState(false)
@@ -17,7 +17,7 @@ export default props => {
         setSelected(selectedId)
     }
 
-    let images = []
+    const images = []
 
     return (
         <Container>
@@ -26,12 +26,20 @@ export default props => {
             </Row>
             <Row className="mb-4 pb-4">
                 {props.projects.map((project, i) => {
-                    const imagePath = project.image ? 'img/' + project.image : sampleImage
+                    const imagePath = project.image
+                        ? 'img/' + project.image
+                        : sampleImage
                     images.push({ source: imagePath })
                     return (
                         <React.Fragment key={project.title}>
-                            <div className="col-xl-4 col-md-6 mb-4" onClick={() => toggleModal(i)}>
-                                <ProjectCard {...project} project={project.id} />
+                            <div
+                                className="col-xl-4 col-md-6 mb-4"
+                                onClick={() => toggleModal(i)}
+                            >
+                                <ProjectCard
+                                    {...project}
+                                    project={project.id}
+                                />
                             </div>
                         </React.Fragment>
                     )

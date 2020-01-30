@@ -5,12 +5,14 @@ import { RootState } from '../../store/myTypes'
 import { Container, Row, Col } from 'react-bootstrap'
 import List from './list'
 import Intro from './intro'
+import { ToolProps } from './tool'
+import { JobProps } from './job'
 
 export interface ResumeProps {
     toolsHeadline: string
-    tools: object[]
+    tools: ToolProps[]
     jobsHeadline: string
-    jobs: object[]
+    jobs: JobProps[]
 }
 
 export const Resume: React.FC<ResumeProps> = props => (

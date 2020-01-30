@@ -3,25 +3,27 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import ProjectSet from './projectSet'
+import { Project } from './projectCard'
 import './style.scss'
 
-export interface PortfolioSection {
+export interface Section {
     id: string
     menu: string
     headline: string
     subhead: string
-    projects: object[]
+    projects: Project[]
 }
 
 export interface PortfolioProps {
-    sections: PortfolioSection[]
+    sections: Section[]
 }
 
 export const Portfolio: React.FC<PortfolioProps> = props => (
     <section id="work" className="portfolio-mf sect-pt4 route">
-        {props.sections.map((section, i) => (
-            <ProjectSet {...section} key={i} />
-        ))}
+        {props.sections &&
+            props.sections.map((section: Section, i: number) => (
+                <ProjectSet {...section} key={i} />
+            ))}
     </section>
 )
 
@@ -31,4 +33,4 @@ const mapStateToProps = (state: RootState) => {
     }
 }
 
-export default compose(connect(mapStateToProps))(Portfolio)
+export default compose<any>(connect(mapStateToProps))(Portfolio)

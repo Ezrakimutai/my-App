@@ -7,6 +7,7 @@ import 'react-app-polyfill/stable'
 // Components
 import Document from './components/document'
 import Navbar from './components/navbar'
+import MyNav from './components/myNav'
 import Intro from './components/intro'
 import Resume from './components/resume'
 import Portfolio from './components/portfolio'
@@ -38,7 +39,7 @@ const App = () => {
     return (
         <Provider store={store}>
             <Document />
-            <Navbar />
+            <MyNav />
             <Intro />
             <Resume />
             <Portfolio />

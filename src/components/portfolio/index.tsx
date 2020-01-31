@@ -3,16 +3,8 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import ProjectSet from './projectSet'
-import { Project } from './projectCard'
+import { Section } from '../../models/section'
 import './style.scss'
-
-export interface Section {
-    id: string
-    menu: string
-    headline: string
-    subhead: string
-    projects: Project[]
-}
 
 export interface PortfolioProps {
     sections: Section[]

@@ -2,14 +2,6 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import sampleImage from '../../img/sample.png'
 
-export interface Project {
-    id: string
-    image: string
-    title: string
-    summary: string
-    slides?: []
-}
-
 export interface ProjectCardProps {
     image: string
     title: string

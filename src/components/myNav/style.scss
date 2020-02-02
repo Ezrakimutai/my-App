@@ -23,6 +23,9 @@
                 &:before {
                     background-color: $primary;
                 }
+                &.active {
+                    color: $black;
+                }
             }
         }
     }

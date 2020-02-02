@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import ProjectCard from './projectCard'
-import { Project } from './projectCard'
+// import { Project } from '../../models/project'
 import TitleBox from '../titleBox'
 import sampleImage from '../../img/sample.png'
 
@@ -35,23 +35,20 @@ const ProjectSet = props => {
             </Row>
             <Row className="mb-4 pb-4">
                 {props.projects &&
-                    props.projects.map((project, i) => {
-                        const imagePath = project.image
-                            ? 'img/' + project.image
+                    props.projects.map((p, i) => {
+                        const imagePath = p.image
+                            ? 'img/' + p.image
                             : sampleImage
                         images.push({ source: imagePath })
+
                         return (
-                            <React.Fragment key={project.id}>
-                                <div
-                                    className="col-xl-4 col-md-6 mb-4"
-                                    onClick={() => toggleModal(i)}
-                                >
-                                    <ProjectCard
-                                        {...project}
-                                        project={project.id}
-                                    />
-                                </div>
-                            </React.Fragment>
+                            <div
+                                key={p.id}
+                                className="col-xl-4 col-md-6 mb-4"
+                                onClick={() => toggleModal(i)}
+                            >
+                                <ProjectCard {...p} project={p.id} />
+                            </div>
                         )
                     })}
             </Row>

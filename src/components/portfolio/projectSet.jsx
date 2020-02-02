@@ -34,23 +34,20 @@ const ProjectSet = props => {
                 <TitleBox headline={props.headline} subhead={props.subhead} />
             </Row>
             <Row className="mb-4 pb-4">
-                {props.projects &&
-                    props.projects.map((p, i) => {
-                        const imagePath = p.image
-                            ? 'img/' + p.image
-                            : sampleImage
-                        images.push({ source: imagePath })
+                {props.projects.map((p, i) => {
+                    const imagePath = p.image ? 'img/' + p.image : sampleImage
+                    images.push({ source: imagePath })
 
-                        return (
-                            <div
-                                key={p.id}
-                                className="col-xl-4 col-md-6 mb-4"
-                                onClick={() => toggleModal(i)}
-                            >
-                                <ProjectCard {...p} project={p.id} />
-                            </div>
-                        )
-                    })}
+                    return (
+                        <div
+                            key={p.id}
+                            className="col-xl-4 col-md-6 mb-4"
+                            onClick={() => toggleModal(i)}
+                        >
+                            <ProjectCard {...p} project={p.id} />
+                        </div>
+                    )
+                })}
             </Row>
             <ModalGateway>
                 {modalIsOpen ? (

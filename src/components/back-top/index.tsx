@@ -13,26 +13,28 @@ export default () => {
             )
             return false
         })
+
         window.addEventListener('scroll', () => {
             const OFFSET_VAL = 100
-            const backToTopSelector = document.querySelector(
+            const backTopElm = document.querySelector(
                 '.back-to-top'
             ) as HTMLElement
-            if (backToTopSelector !== null) {
+
+            if (backTopElm !== null) {
                 if (window.pageYOffset > OFFSET_VAL) {
-                    backToTopSelector.classList.remove('fadeOut')
-                    backToTopSelector.style.display = 'block'
-                    backToTopSelector.classList.add('fadeIn')
+                    backTopElm.classList.remove('fadeOut')
+                    backTopElm.style.display = 'block'
+                    backTopElm.classList.add('fadeIn')
                 } else {
-                    backToTopSelector.classList.remove('fadeIn')
-                    backToTopSelector.classList.add('fadeOut')
+                    backTopElm.classList.remove('fadeIn')
+                    backTopElm.classList.add('fadeOut')
                 }
             }
         })
     })
 
     return (
-        <a href="#" className="back-to-top animated">
+        <a href="/#" className="back-to-top animated">
             <i className="fa fa-chevron-up"></i>
         </a>
     )

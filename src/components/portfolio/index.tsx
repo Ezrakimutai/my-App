@@ -12,10 +12,9 @@ export interface PortfolioProps {
 
 export const Portfolio: React.FC<PortfolioProps> = props => (
     <section id="work" className="portfolio-mf sect-pt4 route">
-        {props.sections &&
-            props.sections.map((section: Section, i: number) => (
-                <ProjectSet {...section} key={i} />
-            ))}
+        {props.sections.map((section: Section, i: number) => (
+            <ProjectSet {...section} key={i} />
+        ))}
     </section>
 )
 

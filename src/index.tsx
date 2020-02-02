@@ -6,7 +6,6 @@ import 'react-app-polyfill/stable'
 
 // Components
 import Document from './components/document'
-import Navbar from './components/navbar'
 import MyNav from './components/myNav'
 import Intro from './components/intro'
 import Resume from './components/resume'
@@ -34,14 +33,20 @@ const store = createStore(rootReducer, {})
 const App = () => {
     return (
         <Provider store={store}>
-            <Document />
-            <MyNav />
-            <Intro />
-            <Resume />
-            <Portfolio />
-            <Footer />
-            <BackToTop />
-            <Preloader />
+            <div
+                data-spy="scroll"
+                data-target=".navbar.fixed-top"
+                data-offset="100"
+            >
+                <Document />
+                <MyNav />
+                <Intro />
+                <Resume />
+                <Portfolio />
+                <Footer />
+                <BackToTop />
+                <Preloader />
+            </div>
         </Provider>
     )
 }

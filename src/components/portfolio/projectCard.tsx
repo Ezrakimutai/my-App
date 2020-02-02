@@ -1,12 +1,13 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import sampleImage from '../../img/sample.png'
+import { Project } from '../../models/project'
 
 export interface ProjectCardProps {
     image: string
     title: string
     summary: string
-    project: string
+    project: Project
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = props => {

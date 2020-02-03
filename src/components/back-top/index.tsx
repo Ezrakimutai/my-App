@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import $ from 'jquery'
 import './style.scss'
 
@@ -35,7 +37,7 @@ export default () => {
 
     return (
         <a href="/#" className="back-to-top animated">
-            <i className="fa fa-chevron-up"></i>
+            <FontAwesomeIcon icon={faChevronUp} />
         </a>
     )
 }

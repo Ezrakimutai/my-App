@@ -1,7 +1,9 @@
+@import '../../variables';
+
 .back-to-top {
     position: fixed;
     display: none;
-    background: #56bc8a;
+    background: $secondary;
     color: #fff;
     width: 44px;
     height: 44px;
@@ -14,9 +16,13 @@
     transition: background 0.5s;
     z-index: 11;
 
-    i {
-        padding-top: 12px;
-        color: #fff;
+    &:hover {
+        color: $secondary;
+        background: #fff;
+    }
+
+    svg {
+        margin-top: 12px;
     }
 }
 

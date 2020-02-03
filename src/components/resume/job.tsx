@@ -9,7 +9,7 @@ export interface JobProps {
 
 export const Job: React.FC<JobProps> = props => (
     <React.Fragment>
-        <span className="pull-right badge badge-secondary">
+        <span className="badge float-right bg-medium text-white">
             {props.timeframe}
         </span>
         <h5>

@@ -3,10 +3,11 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import { Container } from 'react-bootstrap'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import Typed from 'react-typed'
 import './stars.scss'
 import './style.scss'
-import Typed from 'react-typed'
 
 interface IntroProps {
     headline?: string
@@ -40,7 +41,7 @@ export const Intro: React.FC<IntroProps> = props => (
                             href="#about"
                             role="button"
                         >
-                            <i className="ion-arrow-down-c"></i>
+                            <FontAwesomeIcon icon={faChevronDown} />
                         </a>
                     </p>
                 </Container>

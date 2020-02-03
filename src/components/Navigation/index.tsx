@@ -23,11 +23,11 @@ export const Navigation: React.FC<NavigationProps> = props => {
         // Change nav style for load and top.
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > navbar.offsetHeight) {
-                navbar.classList.add('navbar-scroll')
-                navbar.classList.remove('navbar-top')
+                navbar.classList.add('navbar-light')
+                navbar.classList.remove('navbar-dark')
             } else {
-                navbar.classList.add('navbar-top')
-                navbar.classList.remove('navbar-scroll')
+                navbar.classList.add('navbar-dark')
+                navbar.classList.remove('navbar-light')
             }
         })
 
@@ -39,7 +39,12 @@ export const Navigation: React.FC<NavigationProps> = props => {
     })
 
     return (
-        <Navbar collapseOnSelect expand="lg" fixed="top" className="navbar-top">
+        <Navbar
+            collapseOnSelect
+            expand="lg"
+            fixed="top"
+            className="navbar-dark"
+        >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto" defaultActiveKey="#home">

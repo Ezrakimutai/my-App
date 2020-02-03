@@ -1,8 +1,7 @@
-import React from 'react'
-import CarouselProps from 'react-images'
-
 declare module 'react-images' {
+    import React from 'react'
+
     export class Modal extends React.Component<any> {}
     export class ModalGateway extends React.Component<any> {}
-    export class Carousel extends React.Component<CarouselProps> {}
+    export default class Carousel extends React.Component<any> {}
 }

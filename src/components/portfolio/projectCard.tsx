@@ -3,14 +3,7 @@ import Card from 'react-bootstrap/Card'
 import sampleImage from '../../img/sample.png'
 import { Project } from '../../models/project'
 
-export interface ProjectCardProps {
-    image: string
-    title: string
-    summary: string
-    project: Project
-}
-
-export const ProjectCard: React.FC<ProjectCardProps> = props => {
+export const ProjectCard: React.FC<Project> = props => {
     const imagePath: string = props.image ? 'img/' + props.image : sampleImage
 
     return (

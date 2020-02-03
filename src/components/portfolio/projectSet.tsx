@@ -2,42 +2,39 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import ProjectCard from './projectCard'
-// import { Project } from '../../models/project'
+import { Project } from '../../models/project'
 import TitleBox from '../titleBox'
 import sampleImage from '../../img/sample.png'
 
-// @todo Convert to TS, waiting on a fix from react-images
-// https://github.com/doublejosh/react-portfolio/issues/1
+export interface ProjectSetProps {
+    id: string
+    headline: string
+    subhead: string
+    projects: Project[]
+}
 
-// export interface ProjectSetProps {
-//     id: string
-//     headline: string
-//     subhead: string
-//     projects: Project[]
-// }
-
-// export const ProjectSet: React.FC<ProjectSetProps> = props => {
-const ProjectSet = props => {
+export const ProjectSet: React.FC<ProjectSetProps> = props => {
+    //const ProjectSet = props => {
     const [modalIsOpen, setModal] = useState(false)
     const [selectedId, setSelected] = useState(0)
 
-    const toggleModal = selectedId => {
+    const toggleModal = (selectedId: number) => {
         setModal(!modalIsOpen)
         setSelected(selectedId)
     }
 
-    const images = []
-    const makePath = image => {
+    const images: object[] = []
+    const makePath = (image: string) => {
         return image ? 'img/' + image : sampleImage
     }
 
     return (
-        <Container>
+        <Container className="section-wrapper">
             <Row id={props.id} className="text-center">
                 <TitleBox headline={props.headline} subhead={props.subhead} />
             </Row>
             <Row>
-                {props.projects.map((project, i) => {
+                {props.projects.map((project: Project, i: number) => {
                     images.push({ source: makePath(project.image) })
 
                     return (
@@ -48,7 +45,7 @@ const ProjectSet = props => {
                             key={project.id}
                             onClick={() => toggleModal(i)}
                         >
-                            <ProjectCard {...project} project={project.id} />
+                            <ProjectCard {...project} />
                         </Col>
                     )
                 })}

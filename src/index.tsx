@@ -25,11 +25,8 @@ import rootReducer from './store/reducers/rootReducer'
 const store = createStore(rootReducer, {})
 
 const App = () => {
-    const navHeight = 0
-
     useEffect(() => {
         const navbar = document.querySelector('.navbar') as HTMLElement
-        const navHeight = navbar.offsetHeight
         if (!navbar) return
     })
 
@@ -38,7 +35,7 @@ const App = () => {
             <div
                 data-spy="scroll"
                 data-target=".navbar.fixed-top"
-                data-offset={navHeight}
+                data-offset="0"
             >
                 <Document />
                 <Navigation />

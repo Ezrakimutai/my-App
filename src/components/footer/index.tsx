@@ -18,8 +18,8 @@ export const Footer: React.FC<FooterProps> = props => {
     const bgStyle = { backgroundImage: 'url(' + imagePath + ')' }
 
     return (
-        <section
-            className="paralax-mf footer-paralax bg-image sect-mt4 route"
+        <Container
+            className="paralax-mf footer-paralax bg-image section-wrapper"
             style={bgStyle}
         >
             <div className="overlay-mf"></div>
@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = props => {
                     </Row>
                 </Container>
             </footer>
-        </section>
+        </Container>
     )
 }
 

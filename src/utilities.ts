@@ -5,7 +5,7 @@ export const smoothScroll = (event: any, hash: string) => {
 
     const navbar = document.querySelector('.navbar') as HTMLElement
     const hashElm = document.getElementById(hash) as HTMLElement
-    const scrollTo: number = hashElm.offsetTop - navbar.offsetHeight
+    const scrollTo: number = hashElm.offsetTop - (navbar.offsetHeight + 10)
 
     if (hash && hashElm) {
         $('html, body').animate({ scrollTop: scrollTo }, 800, 'easeInOutExpo')

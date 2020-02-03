@@ -16,7 +16,7 @@ export interface ResumeProps {
 }
 
 export const Resume: React.FC<ResumeProps> = props => (
-    <Container className="about-mf sect-pt4 route">
+    <Container className="section-wrapper">
         <Row id="about">
             <Col className="shadow-sm p-5 bg-light">
                 <Row>

@@ -16,7 +16,7 @@ interface IntroProps {
 }
 
 export const Intro: React.FC<IntroProps> = props => (
-    <div id="home" className="intro route bg-image background">
+    <div id="home" className="intro bg-image background">
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />

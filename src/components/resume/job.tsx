@@ -1,4 +1,5 @@
 import React from 'react'
+import Badge from 'react-bootstrap/Badge'
 
 export interface JobProps {
     timeframe: string
@@ -9,9 +10,9 @@ export interface JobProps {
 
 export const Job: React.FC<JobProps> = props => (
     <React.Fragment>
-        <span className="badge float-right bg-medium text-white">
+        <Badge variant="dark" className="badge float-right bg-medium">
             {props.timeframe}
-        </span>
+        </Badge>
         <h5>
             {props.title} -{' '}
             <span className="font-weight-normal">{props.company}</span>

@@ -1,15 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
-
 import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
-
-// Style
+// Style.
 import 'normalize.css'
 import 'animate.css/animate.css'
 import './style.scss'
-
-// Components
+// Components.
 import Document from './components/document'
 import Navigation from './components/Navigation'
 import Intro from './components/intro'
@@ -18,25 +15,30 @@ import Portfolio from './components/portfolio'
 import Footer from './components/footer'
 import BackToTop from './components/back-top'
 import Preloader from './components/preloader'
-
-// Browser JS
-import 'jquery/dist/jquery.min'
+// Browser JS.
 import 'bootstrap/dist/js/bootstrap.min'
 import 'jquery.easing'
-
-// Data
+// Data.
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import rootReducer from './store/reducers/rootReducer'
 const store = createStore(rootReducer, {})
 
 const App = () => {
+    const navHeight = 0
+
+    useEffect(() => {
+        const navbar = document.querySelector('.navbar') as HTMLElement
+        const navHeight = navbar.offsetHeight
+        if (!navbar) return
+    })
+
     return (
         <Provider store={store}>
             <div
                 data-spy="scroll"
                 data-target=".navbar.fixed-top"
-                data-offset="100"
+                data-offset={navHeight}
             >
                 <Document />
                 <Navigation />

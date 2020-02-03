@@ -20,7 +20,7 @@ export const Navigation: React.FC<NavigationProps> = props => {
 
         if (!navbar) return
 
-        // Change style for load and top.
+        // Change nav style for load and top.
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > navbar.offsetHeight) {
                 navbar.classList.add('navbar-scroll')
@@ -34,7 +34,7 @@ export const Navigation: React.FC<NavigationProps> = props => {
         // Auto-advance menu.
         body.scrollspy({
             target: '.navbar.fixed-top',
-            offset: navbar.offsetHeight,
+            offset: navbar.offsetHeight + 50,
         })
     })
 

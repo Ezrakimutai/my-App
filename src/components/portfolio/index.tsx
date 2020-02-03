@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
+import { Container } from 'react-bootstrap'
 import ProjectSet from './projectSet'
 import { Section } from '../../models/section'
 import './style.scss'
@@ -11,11 +12,11 @@ export interface PortfolioProps {
 }
 
 export const Portfolio: React.FC<PortfolioProps> = props => (
-    <section id="work" className="portfolio-mf sect-pt4 route">
+    <Container id="work" className="section-wrapper">
         {props.sections.map((section: Section, i: number) => (
             <ProjectSet {...section} key={i} />
         ))}
-    </section>
+    </Container>
 )
 
 const mapStateToProps = (state: RootState) => {

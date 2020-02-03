@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Row } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import ProjectCard from './projectCard'
 // import { Project } from '../../models/project'
@@ -27,25 +27,29 @@ const ProjectSet = props => {
     }
 
     const images = []
+    const makePath = image => {
+        return image ? 'img/' + image : sampleImage
+    }
 
     return (
         <Container>
             <Row id={props.id} className="text-center">
                 <TitleBox headline={props.headline} subhead={props.subhead} />
             </Row>
-            <Row className="mb-4 pb-4">
-                {props.projects.map((p, i) => {
-                    const imagePath = p.image ? 'img/' + p.image : sampleImage
-                    images.push({ source: imagePath })
+            <Row>
+                {props.projects.map((project, i) => {
+                    images.push({ source: makePath(project.image) })
 
                     return (
-                        <div
-                            key={p.id}
-                            className="col-xl-4 col-md-6 mb-4"
+                        <Col
+                            xl={4}
+                            md={6}
+                            className="mb-4"
+                            key={project.id}
                             onClick={() => toggleModal(i)}
                         >
-                            <ProjectCard {...p} project={p.id} />
-                        </div>
+                            <ProjectCard {...project} project={project.id} />
+                        </Col>
                     )
                 })}
             </Row>

@@ -4,6 +4,7 @@ import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Section } from '../../models/section'
+import { smoothScroll } from '../../utilities'
 import $ from 'jquery'
 import './style.scss'
 
@@ -12,26 +13,13 @@ export interface MyNavProps {
     sections: Section[]
 }
 
+const navSelect = '.navbar'
+
 export const MyNav: React.FC<MyNavProps> = props => {
-    const smoothScroll = (event: any, hash: string) => {
-        // event.preventDefault()
-
-        const navbar = document.querySelector('.navbar') as HTMLElement
-        const hashElm = document.getElementById(hash) as HTMLElement
-        const scrollTo: number = hashElm.offsetTop - navbar.offsetHeight
-
-        if (hash && hashElm) {
-            $('html, body').animate(
-                { scrollTop: scrollTo },
-                800,
-                'easeInOutExpo'
-            )
-        }
-    }
-
     useEffect(() => {
         const navbar = document.querySelector('.navbar') as HTMLElement
         const body: any = $('body')
+
         if (!navbar) return
 
         // Change style for load and top.

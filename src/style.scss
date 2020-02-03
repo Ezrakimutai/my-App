@@ -38,7 +38,7 @@ a {
 }
 
 .bg-medium {
-    background-color: $gray-600;
+    background: linear-gradient(90deg, $gray-600 0%, $gray-700 100%);
 }
 
 .display-table {

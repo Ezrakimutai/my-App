@@ -8,7 +8,7 @@ import 'animate.css/animate.css'
 import './style.scss'
 // Components.
 import Document from './components/document'
-import Navigation from './components/Navigation'
+import Navigation from './components/navigation'
 import Intro from './components/intro'
 import Resume from './components/resume'
 import Portfolio from './components/portfolio'

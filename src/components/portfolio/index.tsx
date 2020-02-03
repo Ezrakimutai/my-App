@@ -12,7 +12,7 @@ export interface PortfolioProps {
 }
 
 export const Portfolio: React.FC<PortfolioProps> = props => (
-    <Container id="work" className="section-wrapper">
+    <Container>
         {props.sections.map((section: Section, i: number) => (
             <ProjectSet {...section} key={i} />
         ))}

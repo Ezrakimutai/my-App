@@ -11,7 +11,7 @@ import './style.scss'
 
 // Components
 import Document from './components/document'
-import MyNav from './components/myNav'
+import Navigation from './components/Navigation'
 import Intro from './components/intro'
 import Resume from './components/resume'
 import Portfolio from './components/portfolio'
@@ -39,7 +39,7 @@ const App = () => {
                 data-offset="100"
             >
                 <Document />
-                <MyNav />
+                <Navigation />
                 <Intro />
                 <Resume />
                 <Portfolio />

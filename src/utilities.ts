@@ -15,8 +15,6 @@ export const smoothScroll = (event: any, hash: string) => {
     const scrollTo: number =
         hashElm.offsetTop - (navbar.offsetHeight + 10) + collapseHeight
 
-    console.log(collapseHeight)
-
     if (hash && hashElm) {
         $('html, body').animate({ scrollTop: scrollTo }, 800, 'easeInOutExpo')
     }

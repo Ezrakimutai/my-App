@@ -21,6 +21,7 @@ export const Footer: React.FC<FooterProps> = props => {
         <Container
             className="paralax-mf footer-paralax bg-image section-wrapper"
             style={bgStyle}
+            fluid={true}
         >
             <div className="overlay-mf"></div>
             <footer>

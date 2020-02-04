@@ -7,11 +7,7 @@ import ProjectSet from './projectSet'
 import Section from '../../models/section'
 import './style.scss'
 
-export interface PortfolioProps {
-    sections: Section[]
-}
-
-export const Portfolio: React.FC<PortfolioProps> = props => (
+export const Portfolio: React.FC<{ sections: Section[] }> = props => (
     <Container>
         {props.sections.map((section: Section, i: number) => (
             <ProjectSet {...section} key={i} />
@@ -25,4 +21,4 @@ const mapStateToProps = (state: RootState) => {
     }
 }
 
-export default compose<any>(connect(mapStateToProps))(Portfolio)
+export default compose(connect(mapStateToProps))(Portfolio)

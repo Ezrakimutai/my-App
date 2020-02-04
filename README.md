@@ -1,4 +1,4 @@
-# One-page Portfolio (ReactJS)
+# Portfolio Template (React, TypeScript, Bootstrap)
 
 ## [Example](https://doublejosh.github.com/react-portfolio)
 

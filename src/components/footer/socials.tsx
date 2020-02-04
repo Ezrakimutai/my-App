@@ -5,17 +5,9 @@ import {
     faTumblr,
     faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
+import Social from './../../models/social'
 
-export interface SocialsItem {
-    service: string
-    link: string
-}
-
-export interface SocialsProps {
-    list: SocialsItem[]
-}
-
-export const Socials: React.FC<SocialsProps> = props => {
+export const Socials: React.FC<{ list: Social[] }> = props => {
     const icons: { [key: string]: any } = {
         github: faGithub,
         tumblr: faTumblr,
@@ -24,7 +16,7 @@ export const Socials: React.FC<SocialsProps> = props => {
 
     return (
         <ul className="socials">
-            {props.list.map(social => (
+            {props.list.map((social: Social) => (
                 <li key={social.service}>
                     <a
                         href={social.link}

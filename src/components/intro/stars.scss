@@ -51,11 +51,11 @@
   
   @keyframes animStar {
     from {
-      transform: translateY(0px);
+      transform: translateY(-500px) translateX(-00px);
     }
   
     to {
-      transform: translateY(-2000px);
+      transform: translateY(500px) translateX(500px);
     }
   }
 

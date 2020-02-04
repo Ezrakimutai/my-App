@@ -4,7 +4,7 @@ const initState: Portfolio = {
     meta: {
         title: 'My Portfolio',
         description: 'Lots of info about you.',
-        icon: '',
+        showRepoLink: true,
     },
     menu: {
         home: 'Hello',

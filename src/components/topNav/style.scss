@@ -55,6 +55,13 @@
         }
     }
 
+    .navbar-brand {
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
     .navbar-nav {
         .nav-link {
             text-transform: uppercase;

@@ -3,17 +3,14 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import { Navbar, Nav } from 'react-bootstrap'
-import Section from '../../models/section'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import Portfolio from '../../models/portfolio'
 import { smoothScroll } from '../../utilities'
 import $ from 'jquery'
 import './style.scss'
 
-export interface TopNavProps {
-    menu: any
-    sections: Section[]
-}
-
-export const TopNav: React.FC<TopNavProps> = props => {
+export const TopNav: React.FC<Portfolio> = props => {
     useEffect(() => {
         const navbar = document.querySelector('.navbar') as HTMLElement
         const body: any = $('body')
@@ -46,6 +43,15 @@ export const TopNav: React.FC<TopNavProps> = props => {
             className="navbar-dark"
         >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            {!!props.meta.showRepoLink && (
+                <Navbar.Brand
+                    href="https://github.com/doublejosh/react-portfolio"
+                    target="_blank"
+                    className="ml-3 mt-2"
+                >
+                    <FontAwesomeIcon icon={faGithub} />
+                </Navbar.Brand>
+            )}
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto" defaultActiveKey="#home">
                     <Nav.Link
@@ -76,10 +82,7 @@ export const TopNav: React.FC<TopNavProps> = props => {
 }
 
 const mapStateToProps = (state: RootState) => {
-    return {
-        menu: state.portfolio.menu,
-        sections: state.portfolio.sections,
-    }
+    return state.portfolio
 }
 
 export default compose(connect<{}, {}, any, any>(mapStateToProps))(TopNav)

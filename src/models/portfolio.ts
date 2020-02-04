@@ -1,12 +1,13 @@
 import Job from './job'
 import Tool from './tool'
 import Section from './section'
+import Social from './social'
 
 export default interface Portfolio {
     meta: {
         title: string
         description: string
-        icon: string
+        showRepoLink: boolean
     }
     menu: {
         home: string
@@ -26,7 +27,7 @@ export default interface Portfolio {
     }
     sections: Section[]
     footer: {
-        social: object[]
+        social: Social[]
         footerMessage: string
         background: string
     }

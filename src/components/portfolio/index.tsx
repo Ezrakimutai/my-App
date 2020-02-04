@@ -4,7 +4,7 @@ import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import { Container } from 'react-bootstrap'
 import ProjectSet from './projectSet'
-import { Section } from '../../models/section'
+import Section from '../../models/section'
 import './style.scss'
 
 export interface PortfolioProps {

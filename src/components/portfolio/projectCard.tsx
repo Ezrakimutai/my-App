@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import sampleImage from '../../img/sample.png'
-import { Project } from '../../models/project'
+import Project from '../../models/project'
 
 export const ProjectCard: React.FC<Project> = props => {
     const imagePath: string = props.image ? 'img/' + props.image : sampleImage

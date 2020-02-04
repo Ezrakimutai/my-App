@@ -13,7 +13,7 @@ import Intro from './components/intro'
 import Resume from './components/resume'
 import Portfolio from './components/portfolio'
 import Footer from './components/footer'
-import BackToTop from './components/back-top'
+import BackToTop from './components/backTop'
 import Preloader from './components/preloader'
 // Browser JS.
 import 'bootstrap/dist/js/bootstrap.min'

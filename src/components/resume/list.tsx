@@ -2,12 +2,12 @@ import React from 'react'
 import TitleBox from '../titleBox'
 import Job from './job'
 import Tool from './tool'
-import { ToolProps } from './tool'
-import { JobProps } from './job'
+import JobModel from '../../models/job'
+import ToolModel from '../../models/tool'
 
 export interface ListProps {
     headline: string
-    list: (JobProps | ToolProps)[]
+    list: (JobModel | ToolModel)[]
     tag: string
 }
 
@@ -22,7 +22,7 @@ export const List: React.FC<ListProps> = props => {
                 box="title-box-2"
                 titleType="title-left"
             />
-            {props.list.map((item: ToolProps | JobProps, i: number) => (
+            {props.list.map((item: ToolModel | JobModel, i: number) => (
                 <TagName {...item} key={i} />
             ))}
         </React.Fragment>

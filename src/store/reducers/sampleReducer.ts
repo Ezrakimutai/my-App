@@ -1,4 +1,6 @@
-const initState = {
+import Portfolio from '../../models/portfolio'
+
+const initState: Portfolio = {
     meta: {
         title: 'My Portfolio',
         description: 'Lots of info about you.',
@@ -148,6 +150,6 @@ const initState = {
     },
 }
 
-export default (state = initState) => {
+export default (state: Portfolio = initState) => {
     return state
 }

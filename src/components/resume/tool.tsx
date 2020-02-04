@@ -1,11 +1,7 @@
 import React from 'react'
+import Tool from '../../models/tool'
 
-export interface ToolProps {
-    name: string
-    list: string[]
-}
-
-export const ToolBox: React.FC<ToolProps> = props => (
+export const ToolBox: React.FC<Tool> = props => (
     <p>
         <span className="font-weight-bold">{props.name}</span>
         <br />

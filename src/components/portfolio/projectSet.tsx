@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import ProjectCard from './projectCard'
-import { Project } from '../../models/project'
+import Project from '../../models/project'
 import TitleBox from '../titleBox'
 import sampleImage from '../../img/sample.png'
 

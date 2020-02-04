@@ -1,6 +1,6 @@
-import { Project } from './project'
+import Project from './project'
 
-export interface Section {
+export default interface Section {
     id: string
     menu: string
     headline: string

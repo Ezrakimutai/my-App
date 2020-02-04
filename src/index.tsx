@@ -8,7 +8,7 @@ import 'animate.css/animate.css'
 import './style.scss'
 // Components.
 import Document from './components/document'
-import Navigation from './components/navigation'
+import TopNav from './components/topNav'
 import Intro from './components/intro'
 import Resume from './components/resume'
 import Portfolio from './components/portfolio'
@@ -38,7 +38,7 @@ const App = () => {
                 data-offset="0"
             >
                 <Document />
-                <Navigation />
+                <TopNav />
                 <Intro />
                 <Resume />
                 <Portfolio />

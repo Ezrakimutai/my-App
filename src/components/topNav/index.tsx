@@ -8,12 +8,12 @@ import { smoothScroll } from '../../utilities'
 import $ from 'jquery'
 import './style.scss'
 
-export interface NavigationProps {
+export interface TopNavProps {
     menu: any
     sections: Section[]
 }
 
-export const Navigation: React.FC<NavigationProps> = props => {
+export const TopNav: React.FC<TopNavProps> = props => {
     useEffect(() => {
         const navbar = document.querySelector('.navbar') as HTMLElement
         const body: any = $('body')
@@ -82,4 +82,4 @@ const mapStateToProps = (state: RootState) => {
     }
 }
 
-export default compose(connect<{}, {}, any, any>(mapStateToProps))(Navigation)
+export default compose(connect<{}, {}, any, any>(mapStateToProps))(TopNav)

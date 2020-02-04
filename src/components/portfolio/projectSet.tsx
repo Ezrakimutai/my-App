@@ -14,7 +14,6 @@ export interface ProjectSetProps {
 }
 
 export const ProjectSet: React.FC<ProjectSetProps> = props => {
-    //const ProjectSet = props => {
     const [modalIsOpen, setModal] = useState(false)
     const [selectedId, setSelected] = useState(0)
 

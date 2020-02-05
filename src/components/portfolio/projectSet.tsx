@@ -3,17 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import ProjectCard from './projectCard'
 import Project from '../../models/project'
+import Section from '../../models/section'
 import TitleBox from '../titleBox'
 import sampleImage from '../../img/sample.png'
 
-export interface ProjectSetProps {
-    id: string
-    headline: string
-    subhead: string
-    projects: Project[]
-}
-
-export const ProjectSet: React.FC<ProjectSetProps> = props => {
+export const ProjectSet: React.FC<Section> = props => {
     const [modalIsOpen, setModal] = useState(false)
     const [selectedId, setSelected] = useState(0)
 

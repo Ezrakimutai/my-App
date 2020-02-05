@@ -17,14 +17,17 @@ export const TopNav: React.FC<Portfolio> = props => {
 
         if (!navbar) return
 
+        const toggle = (elm: HTMLElement, added: string, removed: string) => {
+            elm.classList.add(added)
+            elm.classList.remove(removed)
+        }
+
         // Change nav style for load and top.
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > navbar.offsetHeight) {
-                navbar.classList.add('navbar-light')
-                navbar.classList.remove('navbar-dark')
+                toggle(navbar, 'navbar-light', 'navbar-dark')
             } else {
-                navbar.classList.add('navbar-dark')
-                navbar.classList.remove('navbar-light')
+                toggle(navbar, 'navbar-dark', 'navbar-light')
             }
         })
 

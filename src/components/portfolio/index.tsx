@@ -3,14 +3,14 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { RootState } from '../../store/myTypes'
 import { Container } from 'react-bootstrap'
-import ProjectSet from './projectSet'
-import Section from '../../models/section'
+import Section from './section'
+import SectionModel from '../../models/section'
 import './style.scss'
 
-export const Portfolio: React.FC<{ sections: Section[] }> = props => (
+export const Portfolio: React.FC<{ sections: SectionModel[] }> = props => (
     <Container>
-        {props.sections.map((section: Section, i: number) => (
-            <ProjectSet {...section} key={i} />
+        {props.sections.map((section: SectionModel, i: number) => (
+            <Section {...section} key={i} />
         ))}
     </Container>
 )

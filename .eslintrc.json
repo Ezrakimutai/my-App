@@ -4,8 +4,18 @@
         "jsx": true,
         "useJSXTextNode": true
     },
-    "extends": ["plugin:@typescript-eslint/recommended", "prettier", "prettier/@typescript-eslint"],
-    "plugins": ["@typescript-eslint", "react-hooks", "eslint-plugin-react-hooks", "react", "eslint-plugin-import"],
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "prettier/@typescript-eslint"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "react-hooks",
+        "eslint-plugin-react-hooks",
+        "react",
+        "eslint-plugin-import"
+    ],
     "rules": {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unused-vars": "off",
@@ -13,7 +23,8 @@
         "@typescript-eslint/interface-name-prefix": "off",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "eqeqeq": ["error", "always"]
+        "eqeqeq": ["error", "always"],
+        "no-var-requires": 0
     },
     "settings": {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],

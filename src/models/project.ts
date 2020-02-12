@@ -3,5 +3,6 @@ export default interface Project {
     image: string
     title: string
     summary: string
+    links?: { label: string; url: string }[]
     slides?: []
 }

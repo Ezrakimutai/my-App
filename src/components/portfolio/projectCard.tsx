@@ -12,6 +12,12 @@ export const ProjectCard: React.FC<Project> = props => {
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.summary}</Card.Text>
+                {props.links &&
+                    props.links.map((link, i) => (
+                        <Card.Link key={i} href={link.url} target="_blank">
+                            {link.label}
+                        </Card.Link>
+                    ))}
             </Card.Body>
         </Card>
     )

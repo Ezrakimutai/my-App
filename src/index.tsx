@@ -24,7 +24,7 @@ import { createStore } from 'redux'
 import rootReducer from './store/reducers/rootReducer'
 const store = createStore(rootReducer, {})
 
-const App = () => {
+export const App = () => {
     useEffect(() => {
         const navbar = document.querySelector('.navbar') as HTMLElement
         if (!navbar) return

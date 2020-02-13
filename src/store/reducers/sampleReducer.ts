@@ -1,6 +1,6 @@
 import Portfolio from '../../models/portfolio'
 
-const initState: Portfolio = {
+export const initState: Portfolio = {
     meta: {
         title: 'My Portfolio',
         description: 'Lots of info about you.',
@@ -77,7 +77,13 @@ const initState: Portfolio = {
                     summary:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
                     image: '',
-                    slides: [],
+                    links: [
+                        {
+                            label: 'Example',
+                            url:
+                                'https://github.com/doublejosh/react-portfolio',
+                        },
+                    ],
                 },
                 {
                     id: 'section-1-project-2',
@@ -85,7 +91,6 @@ const initState: Portfolio = {
                     summary:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
                     image: '',
-                    slides: [],
                 },
                 {
                     id: 'section-1-project-3',
@@ -93,7 +98,6 @@ const initState: Portfolio = {
                     summary:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
                     image: '',
-                    slides: [],
                 },
             ],
         },
@@ -109,7 +113,6 @@ const initState: Portfolio = {
                     summary:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
                     image: '',
-                    slides: [],
                 },
                 {
                     id: 'section-2-project-2',
@@ -117,7 +120,6 @@ const initState: Portfolio = {
                     summary:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
                     image: '',
-                    slides: [],
                 },
                 {
                     id: 'section-2-project-3',
@@ -125,7 +127,6 @@ const initState: Portfolio = {
                     summary:
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
                     image: '',
-                    slides: [],
                 },
             ],
         },

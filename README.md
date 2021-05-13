@@ -2,7 +2,7 @@
 
 ### React + TypeScript + Bootstrap
 
-### [Example](https://doublejosh.github.com/react-portfolio)
+### [Example](https://doublejosh.github.io/react-portfolio)
 
 ## Make Your Own!
 
